@@ -38,12 +38,12 @@ p {
   color: #c7c7c7; }
 
 .heading-secondary {
-  font-family: 'Designosaur';
+  font-family: 'Designosaur', sans-serif;
   font-size: 2rem;
   color: #222222; }
 
 .heading-tertiary {
-  font-family: 'Designosaur';
+  font-family: 'Designosaur', sans-serif;
   font-size: 1.2rem;
   color: #222222; }
 
