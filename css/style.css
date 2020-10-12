@@ -73,7 +73,10 @@ p {
 
 @font-face {
   font-family: 'Designosaur';
-  src: url("../../font/designosaur-regular.woff2") format("woff2"), url("../../font/designosaur-regular.woff") format("woff");
+  src: url("../font/Designosaur-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/Designosaur-Regular.eot?#iefix") format("embedded-opentype"), url("../font/Designosaur-Regular.otf") format("opentype"), url("../font/Designosaur-Regular.svg") format("svg"), url("../font/Designosaur-Regular.ttf") format("truetype"), url("../font/Designosaur-Regular.woff") format("woff"), url("../font/Designosaur-Regular.woff2") format("woff2");
+  /* Modern Browsers */
   font-weight: normal;
   font-style: normal; }
 
