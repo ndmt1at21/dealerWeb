@@ -14,3 +14,25 @@
         text-shadow: rgba($color-grey-light, 0.5) 0px 2px 2px;
     }
 }
+
+hr {
+    border: 0;
+    border-bottom: 1px solid $color-grey-dark;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    color: $color-grey-dark;
+}
+
+.heading-secondary {
+    font-family: 'Designosaur';
+    font-size: 2rem;
+    color: $color-black-dark;
+}
+
+.heading-tertiary {
+    font-family: 'Designosaur';
+    font-size: 1.2rem;
+    color: $color-black-dark;
+}

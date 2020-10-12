@@ -14,9 +14,6 @@ body {
   padding: 2% 5%;
   line-height: 1.7; }
 
-p {
-  font-family: Arial, sans-serif; }
-
 .container {
   background-color: #fff; }
 
@@ -31,6 +28,24 @@ p {
   .deep-text--grey {
     background-color: #383838;
     text-shadow: rgba(232, 232, 232, 0.5) 0px 2px 2px; }
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #c7c7c7; }
+
+p {
+  font-family: Arial, sans-serif;
+  color: #c7c7c7; }
+
+.heading-secondary {
+  font-family: 'Designosaur';
+  font-size: 2rem;
+  color: #222222; }
+
+.heading-tertiary {
+  font-family: 'Designosaur';
+  font-size: 1.2rem;
+  color: #222222; }
 
 .u-margin-bottom-large {
   margin-bottom: 8rem; }
@@ -210,6 +225,22 @@ p {
   display: inline-block;
   margin: auto 1.5rem; }
 
-hr {
-  border: 0;
-  border-bottom: 1px solid #c7c7c7; }
+.feature {
+  padding: 5rem 0; }
+  .feature .row {
+    padding: 0 5%; }
+    .feature .row .feature-box {
+      display: flex;
+      flex-direction: row; }
+      .feature .row .feature-box__icon {
+        width: auto;
+        height: 100%;
+        padding-top: 0.5rem;
+        margin-right: 1rem; }
+      .feature .row .feature-box__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+
+.list-feature {
+  padding: 5rem 5%; }

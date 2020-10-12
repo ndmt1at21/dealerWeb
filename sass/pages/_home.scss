@@ -3,7 +3,31 @@
     margin: auto 1.5rem;
 }
 
-hr {
-    border: 0;
-    border-bottom: 1px solid $color-grey-dark;
+.feature {
+    padding: 5rem 0;
+    .row {
+        padding: 0 $padding-page;
+
+        .feature-box {
+            display: flex;
+            flex-direction: row;
+
+            &__icon {
+                width: auto;
+                height: 100%;
+                padding-top: 0.5rem;
+                margin-right: 1rem;
+            }
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }   
+}
+
+.list-feature {
+    padding: 5rem $padding-page;
 }
