@@ -1,8 +1,9 @@
-.content {
-    padding: 0 5%;
-}
-
 .or {
     display: inline-block;
     margin: auto 1.5rem;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid $color-grey-dark;
 }

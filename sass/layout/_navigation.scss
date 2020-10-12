@@ -1,0 +1,33 @@
+.navigation {
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .logo-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            height: 3rem;
+        }
+
+        .logo-descrip {
+            margin-left: 2rem;
+            color: $color-grey-dark;
+        }
+    }
+
+    .contact-box {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: $color-red;
+
+        .contact {
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
