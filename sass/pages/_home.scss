@@ -30,4 +30,40 @@
 
 .list-feature {
     padding: 5rem $padding-page;
+
+    .col-1-of-3 {
+        .list-icon {
+            float: left;
+            margin: 0.7em;
+        }
+    
+        .list-text {
+            border-bottom: 1px solid $color-grey-light;
+            color: $color-orange-light;
+            padding: 0.7rem;
+        }
+    }
+    
+}
+
+.screenshot {
+    padding: 5rem $padding-page;
+    position: relative;
+
+    &__img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 5px solid $color-grey-light;
+        box-shadow: 0 2px 2px $color-grey-dark;
+
+        @include shadow-under-div;
+    }
+}
+
+.customer-say {
+    padding: 3rem $padding-page;
+    .btn-bottom {
+        text-align: center;
+    }
 }

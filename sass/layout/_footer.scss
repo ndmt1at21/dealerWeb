@@ -1,0 +1,20 @@
+.footer {
+    .general-info {
+        background-color: $color-black-light;
+
+        .row {
+            color: $color-grey-dark;
+            padding: 2rem $padding-page;  
+
+            .logo-footer {
+                height: 3rem;
+                filter: grayscale(100%);
+            }
+        }
+    }    
+    
+    .copyright {
+        background-color: $color-black-dark;
+    }
+}
+

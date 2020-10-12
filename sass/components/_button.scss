@@ -9,8 +9,7 @@
         display: inline-block;
         position: relative;
         text-decoration: none;
-        padding: 0.5rem 3rem;
-        font-size: 1.5rem;
+        padding: 0.4rem 2.5rem;
     }
 
     &:hover {
@@ -70,14 +69,14 @@
         }
     }
 
-    &--grey {
-        background-image: linear-gradient(to bottom left, $color-grey-light, $color-grey-dark);
+    &--orange {
+        background-color: none;
+        border: 3px solid $color-grey-dark;
         width: 1rem;
         height: 1rem;
-
-        background-color: $color-white;
-        border-color: $color-grey-dark;
+       
         &::after {
+            border-width: 3px 3px 0 0;
             border-color: $color-grey-dark;
         }
     }
