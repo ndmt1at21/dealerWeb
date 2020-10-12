@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    margin: 0rem;
+    padding: 0;
+}
+
+html {
+    font-size: 80%;
+}
+
+body {
+    background-color: $color-grey-light;
+    font-family: 'Designosaur';
+    font-weight: 200;
+    padding: 2% 5%;
+    line-height: 1.7;
+}
+
+p {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: $color-white;
+}

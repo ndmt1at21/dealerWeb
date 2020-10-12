@@ -1,0 +1,84 @@
+.btn {
+    border-radius: 100rem;
+    transition: all 0.2s;
+    box-shadow: $color-grey-dark 0 3px 3px;
+    
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        padding: 0.5rem 3rem;
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+    }
+
+    &--orange {
+        background-image: linear-gradient(to bottom, $color-orange-light, $color-orange-dark);
+    }
+
+    &--grey {
+        background-image: linear-gradient(to bottom, $color-grey-light, $color-grey-dark);
+    }
+}
+
+.arrowbtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100rem;
+  
+    &::after {
+        position: absolute;
+        content: "";
+        width: 25%;
+        height: 25%;
+    }
+
+    &--right{
+        &::after {
+            border-style: solid;
+            transform: translate(-15%, 0) rotate(45deg);
+        }
+    }
+
+    &--left {
+        &::after {
+            border-style: solid;
+            transform: translate(15%, 0) rotate(-135deg);
+        }
+    }
+
+    &--black {
+        background-image: linear-gradient(to bottom left, $color-grey-light, $color-grey-dark);
+        box-shadow: 0 0 3px $color-black-light;
+        width: 2.5rem;
+        height: 2.5rem;
+
+        &::after {
+            border-width: 5px 5px 0 0;
+            border-color: $color-black-light;
+        }
+    }
+
+    &--grey {
+        background-image: linear-gradient(to bottom left, $color-grey-light, $color-grey-dark);
+        width: 1rem;
+        height: 1rem;
+
+        background-color: $color-white;
+        border-color: $color-grey-dark;
+        &::after {
+            border-color: $color-grey-dark;
+        }
+    }
+}

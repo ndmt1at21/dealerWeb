@@ -1,0 +1,44 @@
+.composition {
+    position: relative;
+
+    &__photo {
+        width: 100%;
+        
+        &--p1 {
+            border: 5px solid $color-grey-light;
+            box-shadow: 0 3px 3px $color-grey-dark;    
+            width: 100%;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            height: 5%;
+            background-color: none;
+            border-radius: 100% 100% 100% 100%;
+            box-shadow: 0 4rem 1.8rem 0.55rem $color-grey-dark;
+        }
+        
+    }
+   
+
+    .arrowbtn-pos-left {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    .arrowbtn-pos-right {
+        position: absolute;
+        top: 45%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+    }
+}   
+
