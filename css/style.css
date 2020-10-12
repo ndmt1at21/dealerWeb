@@ -9,7 +9,7 @@ html {
 
 body {
   background-color: #e8e8e8;
-  font-family: 'Designosaur';
+  font-family: 'Designosaur', sans-serif;
   font-weight: 200;
   padding: 2% 5%;
   line-height: 1.7; }
