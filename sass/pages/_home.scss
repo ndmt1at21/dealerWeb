@@ -67,3 +67,20 @@
         text-align: center;
     }
 }
+
+.comment-textbox {
+    position: relative;
+
+    &__text {
+        font-style: italic;
+        color: $color-grey-dark;
+        text-decoration: none;
+    }
+
+    &__reference {
+        position: absolute;
+        bottom: -2rem;
+        left: 3.5rem;
+        color: $color-black-light;
+    }
+}

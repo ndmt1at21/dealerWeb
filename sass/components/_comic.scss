@@ -1,0 +1,46 @@
+.comic {
+    border: 1px solid;
+    box-shadow: 0 1px 1px $color-grey-light;
+    border-radius: 0.3rem;
+    
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 1.65rem solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 1.6rem solid;
+
+        position: absolute;
+        bottom: -1.6rem;
+        left: 0.9rem;
+    }
+
+    &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 1.5rem solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 1.5rem solid white;
+
+        position: absolute;
+        bottom: -1.5rem;
+        left: 1rem;
+    }
+
+    &--grey {
+        border-color: $color-grey-light;
+        color: $color-grey-dark;
+
+        &::before {
+            background-color: $color-grey-dark;
+        }
+    }
+}
+

@@ -1,20 +1,42 @@
 .footer {
     .general-info {
         background-color: $color-black-light;
+        color: $color-grey-dark;
 
         .row {
-            color: $color-grey-dark;
             padding: 2rem $padding-page;  
 
             .logo-footer {
                 height: 3rem;
-                filter: grayscale(100%);
+                filter: grayscale(90%);
             }
         }
     }    
     
-    .copyright {
+    .copyright-contact {
+        padding: 1rem $padding-page;
+        color: $color-grey-dark;
         background-color: $color-black-dark;
+        display: flex;
+        justify-content: space-between;
+    
+        .author-design {
+            display: inline-block;
+            color: $color-orange-light;
+            font-style: italic;
+            text-decoration: none;
+        }
+        
+        .logo-contact {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            &__img {
+                margin-right: 0.5rem;
+            }
+        }
     }
+   
 }
 

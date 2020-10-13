@@ -69,6 +69,12 @@ p {
 .u-margin-top-tiny {
   margin-top: 1rem; }
 
+.u-underline-text {
+  text-decoration: underline; }
+
+.u-italic-text {
+  font-style: italic; }
+
 @font-face {
   font-family: 'Designosaur';
   src: url("../font/Designosaur-Regular.eot");
@@ -166,17 +172,66 @@ p {
     left: 100%;
     transform: translate(-50%, -50%); }
 
+.comic {
+  border: 1px solid;
+  box-shadow: 0 1px 1px #e8e8e8;
+  border-radius: 0.3rem;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 2rem;
+  position: relative; }
+  .comic::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 1.65rem solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 1.6rem solid;
+    position: absolute;
+    bottom: -1.6rem;
+    left: 0.9rem; }
+  .comic::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 1.5rem solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 1.5rem solid white;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 1rem; }
+  .comic--grey {
+    border-color: #e8e8e8;
+    color: #bbbbbb; }
+    .comic--grey::before {
+      background-color: #bbbbbb; }
+
 .footer .general-info {
-  background-color: #383838; }
+  background-color: #383838;
+  color: #bbbbbb; }
   .footer .general-info .row {
-    color: #bbbbbb;
     padding: 2rem 5%; }
     .footer .general-info .row .logo-footer {
       height: 3rem;
-      filter: grayscale(100%); }
+      filter: grayscale(90%); }
 
-.footer .copyright {
-  background-color: #222222; }
+.footer .copyright-contact {
+  padding: 1rem 5%;
+  color: #bbbbbb;
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between; }
+  .footer .copyright-contact .author-design {
+    display: inline-block;
+    color: #f9b34b;
+    font-style: italic;
+    text-decoration: none; }
+  .footer .copyright-contact .logo-contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .footer .copyright-contact .logo-contact__img {
+      margin-right: 0.5rem; }
 
 .row {
   max-width: inherit;
@@ -291,3 +346,15 @@ p {
   padding: 3rem 5%; }
   .customer-say .btn-bottom {
     text-align: center; }
+
+.comment-textbox {
+  position: relative; }
+  .comment-textbox__text {
+    font-style: italic;
+    color: #bbbbbb;
+    text-decoration: none; }
+  .comment-textbox__reference {
+    position: absolute;
+    bottom: -2rem;
+    left: 3.5rem;
+    color: #383838; }
