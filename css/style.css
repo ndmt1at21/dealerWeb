@@ -75,6 +75,9 @@ p {
 .u-italic-text {
   font-style: italic; }
 
+.u-margin-right-tiny {
+  margin-right: 0.5rem; }
+
 @font-face {
   font-family: 'Designosaur';
   src: url("../font/Designosaur-Regular.eot");
